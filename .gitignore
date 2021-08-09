@@ -1,0 +1,13 @@
+
+# Exclude local HTML previews:
+/*.html
+docs_src/*.html
+
+# Temp work files:
+__*.*
+__*
+*.url
+*.lnk
+
+# Chrome's debug logs for local HTML pages:
+debug.log

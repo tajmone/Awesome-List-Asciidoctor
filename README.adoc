@@ -1,0 +1,101 @@
+= Awesome Lists AsciiDoc Repository Template
+Tristano Ajmone <tajmone@gmail.com>
+:revnumber: 1.0.0
+:lang: en
+// Sections & Numbering:
+:sectanchors:
+// TOC Settings:
+:toc-title: Contents
+:toclevels: 3
+:sectnums!:
+:toc: macro
+:caution-caption: :fire:
+:important-caption: :heavy_exclamation_mark:
+:note-caption: :information_source:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+// Misc Settings:
+:experimental: true
+:reproducible: true
+:icons: font
+:linkattrs: true
+:idprefix:
+:idseparator: -
+
+////
+********************************************************************************
+*                                                                              *
+*                       !!! DON'T EDIT THIS DOCUMENT !!!                       *
+*                                                                              *
+********************************************************************************
+
+This document was auto-generated from multiple AsciiDoc source files inside the
+"docs_src/" folder; all changes would be lost when the document is updated!
+If you want to contribute to this document, edit those source files instead.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+////
+
+
+:user-repo: tajmone/Awesome-List-Asciidoctor
+
+// Version Badge:
+image:https://img.shields.io/badge/version-{revnumber}-yellow[]
+{nbsp}
+// CC0 Badge:
+link:http://creativecommons.org/publicdomain/zero/1.0/[image:https://img.shields.io/badge/license-CC0-00b5da.svg[alt=CC0]^,title="CC0 1.0 Universal, Public Domain"]
+{nbsp}
+// Travis CI Status Badge (AsciiDoc version only):
+link:https://app.travis-ci.com/github/{user-repo}[image:https://api.travis-ci.org/{user-repo}.svg?branch=main[alt=Travis CI Build Status]^,title="Travis CI Build Status"]
+{nbsp}
+// Awesome Basge:
+link:https://awesome.re[image:https://awesome.re/badge.svg[]^,title="Awesome"]
+
+
+================================================================================
+A GitHub repository template for creating Asciidcotor powered Awesome Lists.
+
+* link:https://github.com/{user-repo}[github.com/{user-repo}^]
+
+Created by https://github.com/tajmone[Tristano Ajmone^] in August 2021.
+================================================================================
+
+'''
+toc::[]
+'''
+
+:leveloffset: +1
+
+
+= About
+
+:GH-RepoTemplate: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template[GitHub repository template^,title="GitHub Docs » Creating a repository from a template"]
+:AwesomeList: https://awesome.re[Awesome List^,title="Learn more about Awesome lists"]
+:AsciiDr: https://asciidoctor.org[Asciidoctor
+:EditorConfig: https://editorconfig.org[EditorConfig^,title="EditorConfig website"]
+:EClint: https://www.npmjs.com/package/eclint[EClint^,title="EClint page at NPM"]
+
+Thanks to this {GH-RepoTemplate} you'll be able to quickly setup a new repository for your {AwesomeList} leveraging the power of {AsciiDr} (Ruby).
+The template provides you with all the scaffolding, repository settings and build scripts to get you going in a few a minutes.
+
+
+= Project Structure
+
+* `/docs/` -- GitHub Pages static website, served from `docs` folder, and images source folder (if any).
+** `index.html` -- converted HTML document.
+** `.nojekyll` -- enforces static website (disables Jekyll).
+* `/docs_src/` -- AsciiDoc sources.
+** `index.asciidoc` -- main source document.
+** `*.adoc` -- sub-documents imported into `index.asciidoc`.
+** `build.sh` -- converts to `/docs_src/index.asciidoc` to `/docs/index.html` and `README.adoc`.
+** `preview.sh` -- generates `/docs_src/index.html` for quick previewing (ignored by Git).
+** `asciidoc-coalescer.rb` -- coalescer script (generates single AsciiDoc file).
+** `warn-editing.txt` -- a "`don't edit me`" comment injected into output docs.
+* `README.adoc` -- AsciiDoc sources coalesced into single README doc for GitHub previewing.
+* `validate.sh` -- validates {EditorConfig} code styles consistency via {EClint}.
+* `.editorconfig` -- {EditorConfig} settings for code styles consistency.
+* `.gitattributes` -- _ad hoc_ Git settings.
+* `.gitignore` -- _ad hoc_ Git settings.
+* `.travis.yml` -- Travis CI configuration for testing build and code consistency.
+
+// EOF //

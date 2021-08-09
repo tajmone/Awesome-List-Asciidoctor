@@ -1,0 +1,56 @@
+= Awesome Lists AsciiDoc Repository Template
+Tristano Ajmone <tajmone@gmail.com>
+:revnumber: 1.0.0
+:lang: en
+// Sections & Numbering:
+:sectanchors:
+// TOC Settings:
+:toc-title: Contents
+:toclevels: 3
+:sectnums!:
+ifdef::IsHTML[]
+:toc: left
+endif::[]
+ifdef::env-github[]
+:toc: macro
+:caution-caption: :fire:
+:important-caption: :heavy_exclamation_mark:
+:note-caption: :information_source:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+// Misc Settings:
+:experimental: true
+:reproducible: true
+:icons: font
+:linkattrs: true
+:idprefix:
+:idseparator: -
+
+ifdef::IsHTML[]
+++++
+<!--
+include::warn-editing.txt[]
+-->
+++++
+endif::[]
+ifdef::IsADoc[]
+////
+include::warn-editing.txt[]
+////
+endif::[]
+
+
+include::preamble.adoc[]
+
+ifdef::env-github[]
+'''
+toc::[]
+'''
+endif::[]
+
+:leveloffset: +1
+
+include::sample1.adoc[]
+
+// EOF //

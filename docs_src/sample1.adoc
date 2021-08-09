@@ -1,0 +1,31 @@
+
+= About
+
+:GH-RepoTemplate: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template[GitHub repository template^,title="GitHub Docs » Creating a repository from a template"]
+:AwesomeList: https://awesome.re[Awesome List^,title="Learn more about Awesome lists"]
+:AsciiDr: https://asciidoctor.org[Asciidoctor
+:EditorConfig: https://editorconfig.org[EditorConfig^,title="EditorConfig website"]
+:EClint: https://www.npmjs.com/package/eclint[EClint^,title="EClint page at NPM"]
+
+Thanks to this {GH-RepoTemplate} you'll be able to quickly setup a new repository for your {AwesomeList} leveraging the power of {AsciiDr} (Ruby).
+The template provides you with all the scaffolding, repository settings and build scripts to get you going in a few a minutes.
+
+
+= Project Structure
+
+* `/docs/` -- GitHub Pages static website, served from `docs` folder, and images source folder (if any).
+** `index.html` -- converted HTML document.
+** `.nojekyll` -- enforces static website (disables Jekyll).
+* `/docs_src/` -- AsciiDoc sources.
+** `index.asciidoc` -- main source document.
+** `*.adoc` -- sub-documents imported into `index.asciidoc`.
+** `build.sh` -- converts to `/docs_src/index.asciidoc` to `/docs/index.html` and `README.adoc`.
+** `preview.sh` -- generates `/docs_src/index.html` for quick previewing (ignored by Git).
+** `asciidoc-coalescer.rb` -- coalescer script (generates single AsciiDoc file).
+** `warn-editing.txt` -- a "`don't edit me`" comment injected into output docs.
+* `README.adoc` -- AsciiDoc sources coalesced into single README doc for GitHub previewing.
+* `validate.sh` -- validates {EditorConfig} code styles consistency via {EClint}.
+* `.editorconfig` -- {EditorConfig} settings for code styles consistency.
+* `.gitattributes` -- _ad hoc_ Git settings.
+* `.gitignore` -- _ad hoc_ Git settings.
+* `.travis.yml` -- Travis CI configuration for testing build and code consistency.
