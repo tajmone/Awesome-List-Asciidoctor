@@ -1,7 +1,7 @@
 
 # Exclude local HTML previews:
 /*.html
-docs_src/*.html
+docs_src/preview.html
 
 # Temp work files:
 __*.*

@@ -5,7 +5,7 @@
 #
 # https://github.com/asciidoctor/asciidoctor-extensions-lab/blob/master/scripts/asciidoc-coalescer.rb
 #
-# Copyright (C) 2014-2016 The Asciidoctor Project, MIT License.
+# Copyright (C) 2014-2019 The Asciidoctor Project, MIT License.
 #===============================================================================
 # This script coalesces the AsciiDoc content from a document master into a
 # single output file. It does so by resolving all preprocessor directives in

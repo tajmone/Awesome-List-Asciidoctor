@@ -3,11 +3,14 @@
 // Version Badge:
 image:https://img.shields.io/badge/version-{revnumber}-yellow[]
 {nbsp}
+// Ruby Badge:
+image:https://img.shields.io/badge/Ruby-3.0-yellow[]
+{nbsp}
 // CC0 Badge:
-link:http://creativecommons.org/publicdomain/zero/1.0/[image:https://img.shields.io/badge/license-CC0-00b5da.svg[alt=CC0]^,title="CC0 1.0 Universal, Public Domain"]
+link:https://creativecommons.org/publicdomain/zero/1.0/[image:https://img.shields.io/badge/license-CC0-00b5da.svg[alt=CC0]^,title="CC0 1.0 Universal, Public Domain"]
 {nbsp}
 // Travis CI Status Badge (AsciiDoc version only):
-link:https://app.travis-ci.com/github/{user-repo}[image:https://api.travis-ci.org/{user-repo}.svg?branch=main[alt=Travis CI Build Status]^,title="Travis CI Build Status"]
+link:https://app.travis-ci.com/github/{user-repo}[image:https://api.travis-ci.com/{user-repo}.svg?branch=main[alt=Travis CI Build Status]^,title="Travis CI Build Status"]
 {nbsp}
 // Awesome Basge:
 link:https://awesome.re[image:https://awesome.re/badge.svg[]^,title="Awesome"]

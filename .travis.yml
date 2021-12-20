@@ -8,4 +8,5 @@ install:
   - gem install asciidoctor
 
 script:
-  - ./build-and-validate.sh
+  - ./validate.sh
+  - rake all

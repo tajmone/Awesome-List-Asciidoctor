@@ -1,6 +1,6 @@
 = Awesome Lists AsciiDoc Repository Template
 Tristano Ajmone <tajmone@gmail.com>
-:revnumber: 1.0.0
+:revnumber: 1.1.0
 :lang: en
 // Sections & Numbering:
 :sectanchors:
